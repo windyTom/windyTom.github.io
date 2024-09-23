@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, lightblue, white, lightblue);
+  max-width: 1500px;
+  margin: auto;
+}
+
+main {
+  margin: 1%;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline wavy blue;
+  padding-bottom: 1em;
+}
+
+h2 {
+  text-align: center;
+  padding: 1em;
+  font-weight: bold;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+ul {
+  font-weight: bolder;
+  text-shadow: #b9c7c9 2px 0 10px;
+  margin: 10px;
+}
+
+footer {
+  width: 100%;
+  bottom: 0px;
+  background-color: #395dbf;
+  color: #dddddd;
+  font-family: Georgia;
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#headerImg {
+  max-width: 100%;
+  max-height: 100vh;
+  display: block; /* Ustawienie obrazu jako elementu blokowego */
+  margin: 0 auto; /* Automatyczne centrowanie w poziomie */
+}
+
+#navigation {
+  font-family: Georgia;
+  position: sticky;
+  top: 0;
+  height: 0;
+}
+
+#navigation ul li, #menu, #btnMoreAboutMe {
+  color: black;
+  background-color: ivory;
+  border: lightgrey solid 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 1px;
+  padding: 2px;
+}
+
+#navigation ul li:hover {
+  color:navy;
+  background-color: lightblue;
+}
+
+#menuList {
+  margin: 0;
+  display: flex;
+}
+
+#aboutPicture {
+  width: 50vw;
+  box-shadow: 1em -1em 25px #b9c7c9;
+  float: left;
+  margin: 0 2vw 2vw 0;
+}
+
+#education, .list{
+  list-style-type: circle;
+  margin-left: 5%;
+}
+
+#btnMoreAboutMe {
+  float: right;
+}
+
+#activities {
+  clear: both;
+}
+
+#deliveryUl {
+  list-style-type: none;
+}
+
+.aboutMePictures {
+  float: left;
+  width: 20%;
+  margin: 1%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.activityBox {
+  flex: 1;
+  margin: 2%;
+  background-color: #cdecf6;
+  box-shadow: 1em -1em 25px #b9c7c9;
+  min-width: 300px;
+  border-radius: 10px;
+}
+
+.activityBoxContent, .hidden {
+  margin: 5%;
+  display: none;
+}
+
+.link {
+  font-weight: bold;
+  text-align: center;
+}
+
+.smallPictureRight {
+  float: right;
+  margin: 0 0 2vw 2vw;
+  max-width: 50vw;
+  max-height: 20vh;
+  box-shadow: -1em -1em 25px #b9c7c9;
+}
+
+.lastPDelivery {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2%
+}
+
+@media screen and (min-width: 400px) {
+  section {
+    padding-top: 35px;
+  }
+  #navigation {
+    background-color: lavender;
+    height: 40px;
+  }
+  #menuList li{
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 861px) and (max-width: 1100px){
+  #education {
+    clear: both;
+    text-align: center;
+    list-style-type: none;
+  }
+}
